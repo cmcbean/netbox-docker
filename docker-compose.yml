@@ -14,7 +14,7 @@ services:
       retries: 15
       interval: 15s
       test: "curl -f http://localhost:8080/api/ || exit 1"
-    user: 1027:100
+    user: 'unit:root'
     volumes:
     - /volume1/docker/netbox/netbox-docker:/etc/netbox/config:z,ro
     - netbox-media-files:/opt/netbox/netbox/media:rw
