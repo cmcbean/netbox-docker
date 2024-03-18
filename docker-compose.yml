@@ -82,7 +82,7 @@ services:
     - redis-server --requirepass $$REDIS_PASSWORD ## $$ because of docker-compose
     env_file: env/redis-cache.env
     volumes:
-    - /volume1/docker/netbox-docker/redis-cache:/data
+    - /volume1/docker/netbox/redis-cache:/data
 
 volumes:
   netbox-media-files:
